@@ -9,5 +9,5 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(eventRoutes);
-
+console.log('Running on port: ', process.env.PORT);
 app.listen(process.env.PORT);
